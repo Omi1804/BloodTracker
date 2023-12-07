@@ -1,0 +1,105 @@
+.signupComp {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e6e8fa, #f7f8fd);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signUpForm {
+  border-radius: 1rem;
+  background: linear-gradient(45deg, #ffc3bf, #ffafbd);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1),
+    inset 0px 2px 4px rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.4);
+  }
+
+  .formFields {
+    display: flex;
+    flex-direction: column;
+
+    .nameFields > input,
+    > input {
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      margin-inline: 1rem;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        border-color: #aaa;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(130, 170, 255, 0.6);
+      }
+    }
+  }
+  > button {
+    flex-shrink: 0;
+    width: 11rem;
+    padding: 0.3rem 1.5rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #d91106;
+    color: #fff;
+  }
+
+  > button:hover {
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .googleSignup {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    > p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+    }
+    > img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.loginImg {
+  width: 40rem;
+  height: 40rem;
+  position: relative;
+  > img {
+    position: absolute;
+    left: -3rem;
+    top: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

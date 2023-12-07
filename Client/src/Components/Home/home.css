@@ -1,0 +1,196 @@
+.homePage {
+  position: relative;
+  background: linear-gradient(135deg, #e6e8fa, #f7f8fd);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-block-start: 4rem;
+}
+
+.heroSec {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+
+  .div1 {
+    padding: 5rem 5rem;
+
+    > h1 {
+      color: #d91106;
+      font-family: Poppins;
+      font-size: 2.2rem;
+      margin-block: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    > p {
+      color: rgba(51, 51, 51, 0.8);
+      font-family: Poppins;
+      font-size: 1.05rem;
+      font-style: normal;
+      padding-right: 5rem;
+      margin-block: 2rem;
+      font-weight: 400;
+      line-height: 1.5625rem;
+      letter-spacing: 0.075rem;
+    }
+
+    > button {
+      width: 12rem;
+      font-size: 1rem;
+      font-weight: 600;
+      font-style: normal;
+      height: 3rem;
+      cursor: pointer;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      background: rgba(235, 55, 56, 0.9);
+    }
+  }
+
+  .div2 {
+    position: relative;
+    .circle {
+      background: linear-gradient(45deg, #ffc3bf, #ffafbd);
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      position: absolute;
+      left: -10%;
+      top: 15%;
+    }
+    .halfCircle1 {
+      left: 50%;
+      top: 5%;
+    }
+  }
+}
+
+.halfCircle {
+  background: linear-gradient(45deg, #ffc3bf, #ffafbd);
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.missionSec {
+  margin-block: 5rem;
+  text-align: center;
+  position: relative;
+
+  > h1 {
+    color: #d91106;
+    font-family: Poppins;
+    font-size: 2.2rem;
+    margin-block: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  > p {
+    color: rgba(51, 51, 51, 0.8);
+    font-family: Poppins;
+    font-size: 1.05rem;
+    font-style: normal;
+    margin-block: 2rem;
+    margin-inline: 6rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    letter-spacing: 0.075rem;
+  }
+}
+
+.collabSec {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+
+  > h1 {
+    color: #d91106;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    margin-block: 2rem 0rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.customCarousel {
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carouselImage {
+  width: 40rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  color: white !important;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.bloodDonateSec {
+  background: linear-gradient(135deg, #e6e8fa, #f7f8fd);
+  width: 100%;
+  text-align: center;
+  padding: 10rem;
+  > h1 {
+    color: #d91106;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  > button {
+    width: 12rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    height: 3rem;
+    cursor: pointer;
+    margin-block: 3rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgba(235, 55, 56, 0.9);
+  }
+}
+
+.homeFooter {
+  background: rgba(235, 55, 56, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 13rem;
+
+  > img {
+    object-fit: contain;
+    width: 9rem;
+    height: 9rem;
+  }
+
+  > h1 {
+    color: #fffefe;
+
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
