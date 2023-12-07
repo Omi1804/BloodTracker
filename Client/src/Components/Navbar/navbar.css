@@ -1,0 +1,92 @@
+.navbarSec {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(45deg, #ffc3bf, #ffafbd);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  animation: heatbeat 1s infinite ease;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@keyframes heatbeat {
+  0%,
+  70%,
+  50% {
+    transform: scale(1);
+  }
+  30%,
+  60% {
+    transform: scale(1.1);
+  }
+}
+
+.navMenus .navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+
+  .navLinks {
+    /* color: #2d2d2d; */
+    color: #d91106;
+    margin-inline: 2rem;
+    transition: color 0.3s ease;
+  }
+
+  .navLinks:hover {
+    color: #fff;
+  }
+
+  > button {
+    flex-shrink: 0;
+    margin-inline-start: 2rem;
+    padding: 0.4rem 1.5rem;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    background: #fff;
+    color: #d91106;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  > button:hover {
+    background-color: #d91106;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navMenus .navList .navLinks {
+    margin-inline: 0.5rem;
+  }
+
+  .navMenus .navList > button {
+    padding: 0.4rem 1rem;
+  }
+}
