@@ -13,20 +13,20 @@ const Login = () => {
         <h1>LOG IN</h1>
         <div className="formFields">
           <div className="nameFields">
-            <input type="text" className="first" placeholder="First Name" />
-            <input type="text" className="last" placeholder="Last Name" />
+            {/* <input type="text" className="first" placeholder="First Name" /> */}
+            {/* <input type="text" className="last" placeholder="Last Name" /> */}
           </div>
           <input type="email" className="email" placeholder="Email" />
           <input type="password" className="pass" placeholder="Password" />
-          <input
+          {/* <input
             type="password"
             className="confrmPass"
             placeholder="Confirm Password"
-          />
+          /> */}
         </div>
-        <button className="signInBtn">SIGN UP</button>
+        <button className="signInBtn">LOG IN</button>
         <div className="googleSignup">
-          <p>Or SignUp with</p>
+          <p>Or Login with</p>
           <img src={googleIcon} alt="" />
         </div>
       </div>
